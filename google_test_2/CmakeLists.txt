@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.1)
+project(google_test_2)
+set(CMAKE_CXX_STANDARD 14)
+
+set(SRCS
+    main.cpp
+    MyGTest.cpp
+    )
+
+add_executable(${PROJECT_NAME} ${SRCS})
+
+target_link_libraries(${PROJECT_NAME}
+       ${GTEST_LIBRARIES}
+        )

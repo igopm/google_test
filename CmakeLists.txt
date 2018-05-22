@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.1)
+project(google_test)
+set(CMAKE_CXX_STANDARD 14)
+
+find_package(GTest REQUIRED)
+include_directories(${GTEST_INCLUDE_DIRS})
+
+add_subdirectory(google_test_1)
+add_subdirectory(google_test_2)
+add_subdirectory(google_test_3)
